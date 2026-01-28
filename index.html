@@ -372,6 +372,15 @@
             display: block;
         }
 
+        /* Wide testimonial cards for landscape screenshots */
+        .testimonial-card.wide {
+            width: 450px;
+        }
+
+        .wide-gallery {
+            animation-duration: 50s;
+        }
+
         /* IRL Photos Section */
         .irl-section {
             padding: 80px 0;
@@ -380,11 +389,12 @@
         }
 
         .irl-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 1.5rem;
             padding: 0 2rem;
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -395,6 +405,8 @@
             aspect-ratio: 4/3;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: transform 0.3s, box-shadow 0.3s;
+            width: calc(33.333% - 1rem);
+            min-width: 280px;
         }
 
         .irl-card:hover {
@@ -831,8 +843,8 @@
                 transform: none;
             }
 
-            .irl-grid {
-                grid-template-columns: 1fr;
+            .irl-card {
+                width: 100%;
             }
 
             .scroll-gallery {
@@ -905,76 +917,78 @@
     <section class="testimonials-section" id="proof">
         <div class="section-header">
             <div class="section-tag">// WINS FROM THE DOJO</div>
-            <h2 class="section-title">HUNDREDS OF NINJAS CHANGED THEIR LIVES</h2>
+            <h2 class="section-title">COUNTLESS NINJAS CHANGED THEIR LIVES</h2>
             <p style="color: var(--text-secondary); margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
                 Real screenshots from real members. Grow your crypto portfolio and make life changing gains.
             </p>
         </div>
 
-        <!-- Scrolling Gallery Row 1 -->
+        <!-- Scrolling Gallery Row 1 - Tall Phone Screenshots -->
         <div class="scroll-gallery-wrapper">
             <div class="scroll-gallery">
                 <div class="testimonial-card"><img src="images/photo_1_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_3_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_5_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_2_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_10_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_11_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_12_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_14_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_15_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_16_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_19_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_25_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_26_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_28_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <!-- Duplicate for seamless loop -->
                 <div class="testimonial-card"><img src="images/photo_1_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_3_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_5_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_2_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_10_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_11_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_12_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_14_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_15_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_16_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_19_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_25_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_26_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_28_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
             </div>
         </div>
 
-        <!-- Scrolling Gallery Row 2 (Reverse) -->
+        <!-- Scrolling Gallery Row 2 - More Tall Screenshots (Reverse) -->
         <div class="scroll-gallery-wrapper">
             <div class="scroll-gallery reverse">
-                <div class="testimonial-card"><img src="images/photo_10_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_14_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_15_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_17_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_20_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_18_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_21_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_22_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_26_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_27_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_29_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_36_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <!-- Duplicate for seamless loop -->
-                <div class="testimonial-card"><img src="images/photo_10_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_14_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_15_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_17_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_20_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_18_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_21_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_22_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_26_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_27_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <div class="testimonial-card"><img src="images/photo_29_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card"><img src="images/photo_36_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
             </div>
         </div>
 
-        <!-- Scrolling Gallery Row 3 - More Screenshots -->
+        <!-- Scrolling Gallery Row 3 - Wide/Landscape Screenshots -->
         <div class="scroll-gallery-wrapper">
-            <div class="scroll-gallery">
-                <div class="testimonial-card"><img src="images/photo_32_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_43_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_44_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_23_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_22_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_24_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_31_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+            <div class="scroll-gallery wide-gallery">
+                <div class="testimonial-card wide"><img src="images/photo_19_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_23_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_24_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_25_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_28_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_31_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_32_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_33_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
                 <!-- Duplicate for seamless loop -->
-                <div class="testimonial-card"><img src="images/photo_32_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_43_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_44_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_23_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_22_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_24_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
-                <div class="testimonial-card"><img src="images/photo_31_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_19_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_23_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_24_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_25_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_28_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_31_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_32_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
+                <div class="testimonial-card wide"><img src="images/photo_33_2026-01-26_21-46-59.jpg" alt="Testimonial"></div>
             </div>
         </div>
     </section>
@@ -1001,51 +1015,16 @@
                 <div class="overlay"><span class="location">🇬🇧 LONDON</span></div>
             </div>
             <div class="irl-card">
-                <img src="images/photo_13_2026-01-26_21-46-59.jpg" alt="Beach Club">
-                <div class="overlay"><span class="location">🍹 BEACH CLUB</span></div>
+                <img src="images/photo_13_2026-01-26_21-46-59.jpg" alt="Asia">
+                <div class="overlay"><span class="location">🌏 ASIA</span></div>
             </div>
             <div class="irl-card">
-                <img src="images/photo_41_2026-01-26_21-46-59.jpg" alt="Thailand Gym">
-                <div class="overlay"><span class="location">💪 NINJAS COOKIN</span></div>
+                <img src="images/photo_41_2026-01-26_21-46-59.jpg" alt="Collaboration">
+                <div class="overlay"><span class="location">🤝 COLLABORATION</span></div>
             </div>
             <div class="irl-card">
-                <img src="images/photo_6_2026-01-26_21-46-59.jpg" alt="Shisha Meetup">
-                <div class="overlay"><span class="location">🇬🇧 UK MEETUP</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dojos Section -->
-    <section class="dojos-section">
-        <div class="section-header">
-            <div class="section-tag">// THE DOJOS</div>
-            <h2 class="section-title">FOUR PATHS TO FREEDOM</h2>
-        </div>
-
-        <div class="dojos-grid">
-            <div class="dojo-card crypto main-focus">
-                <div class="dojo-badge">Main Focus</div>
-                <h3 class="dojo-title">CRYPTO DOJO</h3>
-                <p class="dojo-japanese">暗号通貨道場</p>
-                <p class="dojo-description">Early plays, alpha calls, on-chain analysis. When markets heat up, this is where fortunes are made. Base season 2024 delivered 100x+ plays to members.</p>
-            </div>
-
-            <div class="dojo-card training">
-                <h3 class="dojo-title">TRAINING DOJO</h3>
-                <p class="dojo-japanese">鍛錬道場</p>
-                <p class="dojo-description">Fitness, martial arts, discipline. Many members train Muay Thai in Thailand. Physical excellence creates mental edge for business.</p>
-            </div>
-
-            <div class="dojo-card resources">
-                <h3 class="dojo-title">RESOURCES DOJO</h3>
-                <p class="dojo-japanese">財源道場</p>
-                <p class="dojo-description">Remote sales strategies, AI tools, business opportunities. Learn the skills that let you work from anywhere and stack income streams.</p>
-            </div>
-
-            <div class="dojo-card events">
-                <h3 class="dojo-title">EVENTS DOJO</h3>
-                <p class="dojo-japanese">催し物道場</p>
-                <p class="dojo-description">IRL meetups in London, Thailand, and beyond. Operation: Blacknight expeditions. The connections you make here last forever.</p>
+                <img src="images/photo_7_2026-01-26_21-46-59.jpg" alt="Lifestyle">
+                <div class="overlay"><span class="location">🌴 THE LIFESTYLE</span></div>
             </div>
         </div>
     </section>
