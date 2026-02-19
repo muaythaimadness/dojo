@@ -31,13 +31,13 @@
             --text-secondary: #a0a0b0;
             --accent-cyan: #00f5d4;
             --accent-green: #00ff88;
-            --accent-pink: #ff2d6a;
-            --accent-red: #ff4757;
-            --accent-purple: #a855f7;
+            --accent-pink: #c41e3a;
+            --accent-red: #c41e3a;
+            --accent-purple: #8b21d4;
             --accent-gold: #ffd700;
-            --gradient-crypto: linear-gradient(135deg, #00f5d4 0%, #00ff88 100%);
-            --gradient-fire: linear-gradient(135deg, #ff2d6a 0%, #ff4757 100%);
-            --gradient-purple: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            --gradient-crypto: linear-gradient(135deg, #8b21d4 0%, #c41e3a 100%);
+            --gradient-fire: linear-gradient(135deg, #c41e3a 0%, #8b21d4 100%);
+            --gradient-purple: linear-gradient(135deg, #8b21d4 0%, #c41e3a 100%);
         }
 
         * {
@@ -73,7 +73,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle at 30% 30%, rgba(0, 245, 212, 0.08) 0%, transparent 50%),
+            background: radial-gradient(circle at 30% 30%, rgba(139, 33, 212, 0.08) 0%, transparent 50%),
                         radial-gradient(circle at 70% 70%, rgba(255, 45, 106, 0.06) 0%, transparent 50%);
             animation: bgPulse 15s ease-in-out infinite;
         }
@@ -114,10 +114,10 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 1.5rem;
             font-weight: 700;
-            background: var(--gradient-fire);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background: none;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: var(--accent-red);
+            background-clip: unset;
         }
 
         .nav-cta {
@@ -125,8 +125,8 @@
             font-weight: 700;
             font-size: 1rem;
             padding: 0.75rem 1.5rem;
-            background: var(--gradient-crypto);
-            color: var(--bg-dark);
+            background: var(--accent-green);
+            color: #000000;
             border: none;
             clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
             cursor: pointer;
@@ -136,7 +136,7 @@
 
         .nav-cta:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 245, 212, 0.5);
+            box-shadow: 0 0 30px rgba(196, 30, 58, 0.5);
         }
 
         /* Hero Section */
@@ -158,10 +158,10 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 3px;
-            color: var(--accent-cyan);
-            background: rgba(0, 245, 212, 0.1);
+            color: var(--accent-red);
+            background: rgba(139, 33, 212, 0.1);
             padding: 0.5rem 1.5rem;
-            border: 1px solid rgba(0, 245, 212, 0.3);
+            border: 1px solid rgba(139, 33, 212, 0.3);
             margin-bottom: 2rem;
             clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
         }
@@ -177,9 +177,9 @@
         }
 
         .hero h1 .gradient-text {
-            background: var(--gradient-fire);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background: none;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: var(--accent-red);
             background-clip: text;
         }
 
@@ -199,7 +199,7 @@
         .doors-closed {
             font-family: 'Orbitron', sans-serif;
             font-size: 0.9rem;
-            color: var(--accent-cyan);
+            color: var(--accent-purple);
             letter-spacing: 3px;
             margin-bottom: 0.5rem;
         }
@@ -245,10 +245,11 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 2.5rem;
             font-weight: 700;
-            background: var(--gradient-crypto);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background: none;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: var(--accent-green);
+            background-clip: unset;
+            color: var(--accent-green);
         }
 
         .stat-label {
@@ -283,7 +284,7 @@
 
         .btn-primary:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(0, 245, 212, 0.6);
+            box-shadow: 0 0 40px rgba(196, 30, 58, 0.6);
         }
 
         .btn-secondary {
@@ -303,8 +304,8 @@
         }
 
         .btn-secondary:hover {
-            border-color: var(--accent-cyan);
-            background: rgba(0, 245, 212, 0.1);
+            border-color: var(--accent-purple);
+            background: rgba(139, 33, 212, 0.1);
         }
 
         /* Testimonials Wall Section */
@@ -327,7 +328,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 3px;
-            color: var(--accent-cyan);
+            color: var(--accent-green);
             margin-bottom: 1rem;
         }
 
@@ -344,7 +345,7 @@
             align-items: stretch;
             gap: 1rem;
             padding: 0 1rem;
-            animation: scrollGallery 60s linear infinite;
+            animation: scrollGallery 55s linear infinite;
             width: max-content;
         }
 
@@ -462,7 +463,7 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 0.875rem;
             font-weight: 600;
-            color: var(--accent-cyan);
+            color: var(--accent-red);
         }
 
         /* Dojos Section */
@@ -513,8 +514,8 @@
         }
 
         .dojo-card.main-focus {
-            border: 2px solid var(--accent-cyan);
-            box-shadow: 0 0 30px rgba(0, 245, 212, 0.2);
+            border: 2px solid var(--accent-purple);
+            box-shadow: 0 0 30px rgba(139, 33, 212, 0.2);
         }
 
         .dojo-card.ai.main-focus {
@@ -581,7 +582,7 @@
         }
 
         .philosophy-quote span {
-            color: var(--accent-cyan);
+            color: var(--accent-red);
         }
 
         .pillars {
@@ -639,9 +640,9 @@
         }
 
         .pricing-card.featured {
-            border: 2px solid var(--accent-cyan);
+            border: 2px solid var(--accent-purple);
             transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(0, 245, 212, 0.2);
+            box-shadow: 0 0 40px rgba(139, 33, 212, 0.2);
         }
 
         .pricing-card.featured::before {
@@ -707,7 +708,7 @@
 
         .pricing-feature::before {
             content: '✓';
-            color: var(--accent-cyan);
+            color: var(--accent-green);
             font-weight: bold;
         }
 
@@ -732,7 +733,7 @@
 
         .pricing-cta:hover {
             transform: scale(1.02);
-            box-shadow: 0 0 30px rgba(0, 245, 212, 0.5);
+            box-shadow: 0 0 30px rgba(196, 30, 58, 0.5);
         }
 
         .pricing-card:not(.featured) .pricing-cta {
@@ -742,8 +743,8 @@
         }
 
         .pricing-card:not(.featured) .pricing-cta:hover {
-            border-color: var(--accent-cyan);
-            background: rgba(0, 245, 212, 0.1);
+            border-color: var(--accent-purple);
+            background: rgba(139, 33, 212, 0.1);
             box-shadow: none;
         }
 
@@ -755,7 +756,7 @@
         }
 
         .crypto-note span {
-            color: var(--accent-cyan);
+            color: var(--accent-red);
         }
 
         /* FAQ Section */
@@ -844,7 +845,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--accent-cyan);
+            color: var(--accent-purple);
         }
 
         .footer-bottom {
@@ -860,6 +861,7 @@
         @media (max-width: 768px) {
             nav {
                 padding: 1rem;
+                justify-content: center;
             }
 
             .hero {
@@ -926,7 +928,6 @@
         
         <!-- Email Capture -->
         <div class="email-capture">
-            <a href="https://money-dojo-waiting-room.beehiiv.com/subscribe" target="_blank" class="nav-cta">JOIN THE DOJO</a>
         </div>
         
         <div class="hero-stats">
@@ -945,7 +946,7 @@
         </div>
 
         <div class="hero-cta">
-            <a href="https://money-dojo-waiting-room.beehiiv.com/subscribe" target="_blank" class="btn-primary">Join The Waitlist</a>
+            <a href="https://money-dojo-waiting-room.beehiiv.com/subscribe" target="_blank" class="nav-cta">JOIN THE DOJO</a>
         </div>
     </section>
 
@@ -1141,7 +1142,7 @@
                     <div class="pricing-feature">Crypto Dojo + AI Dojo</div>
                     <div class="pricing-feature">IRL event invites</div>
                     <div class="pricing-feature">Training & Resources</div>
-                    <div class="pricing-feature" style="color: var(--accent-cyan);">Save £500 vs quarterly</div>
+                    <div class="pricing-feature" style="color: var(--accent-red);">Save £500 vs quarterly</div>
                 </div>
                 <a href="https://buy.stripe.com/14A8wP8l68N5auf7l8afS0s" target="_blank" class="pricing-cta">Join The Dojo</a>
             </div>
@@ -1149,9 +1150,9 @@
 
         <div class="crypto-note">
             <p><span>Prefer crypto?</span> Send ETH or USDC (any EVM chain) to:</p>
-            <p style="font-family: monospace; font-size: 0.8rem; color: var(--accent-cyan); word-break: break-all; margin: 0.5rem 0;">0xF384aA3F0FA712a2D0645fD8901B6a25EeADFF50</p>
+            <p style="font-family: monospace; font-size: 0.8rem; color: var(--accent-green); word-break: break-all; margin: 0.5rem 0;">0xF384aA3F0FA712a2D0645fD8901B6a25EeADFF50</p>
             <p><span>Wise transfer</span> also available.</p>
-            <p style="margin-top: 0.75rem;">After paying via crypto or to pay with Wise, <a href="https://t.me/edpilled" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">DM @edpilled on Telegram</a> with your TX hash to get access.</p>
+            <p style="margin-top: 0.75rem;">After paying via crypto or to pay with Wise, <a href="https://t.me/edpilled" target="_blank" style="color: var(--accent-red); text-decoration: underline;">DM @edpilled on Telegram</a> with your TX hash to get access.</p>
         </div>
     </section>
 
